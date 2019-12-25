@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rediscovering Neverland</title>
+		<meta name="description" content="Fast, easy deployments with ZEIT Now">
+		<meta name="author" content="styfle">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="vendor/css/reset.css">
+		<link rel="stylesheet" href="vendor/css/reveal.css">
+		<link rel="stylesheet" href="vendor/css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="vendor/lib/css/solarized-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			body {
+				background: black;
+				background-image: radial-gradient(circle at 25px 25px, dimgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, dimgray 2%, transparent 0%);
+				background-size: 100px 100px;
+				height: 100vh;
+				display: flex;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+			}
+			.reveal pre code {
+				background: #003737;
+				padding: 25px;
+				border-radius: 7px;
+			}
+
+			.reveal code {
+				color: deeppink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						## Rediscovering Neverland
+				
+						How to instantly deploy your code 🚀
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## World Wide Web
+					
+							The first web browser was released to the public in August 1991
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Hook (film)
+					
+							The live-action Peter Pan movie was released to in December 1991
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Coincidence?
+					
+							Maybe, maybe not 🙄
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Deployment in the 1990's
+					
+							- 🔑 Login to FTP Server
+							- ↔️  Copy HTML/PHP files
+							- ✅ Done
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Easy
+					
+							- 🎯 Zero configuration*
+							- 📈  Zero downtime*
+
+							<small>*kind of</small>
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Introducing ZEIT Now
+					
+							- 🔢 No need to setup DNS
+							- 🔒 No need to setup SSL
+							- 🌩️ No need to setup a CDN
+							- 🤑 No need for a credit card
+							- 🚀 `git push` to deploy 
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## DNS
+					
+							Buy a domain at https://zeit.co/domains
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## SSL/TLS
+					
+							Every deployment is served over `https` with TLS 1.3 https://zeit.co/blog/automatic-ssl-with-now-lets-encrypt
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Smart CDN
+					
+							Static files are automatically served from the edge https://zeit.co/smart-cdn
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Start for free
+					
+							No credit card required to create an account http://zeit.co/pricing
+
+							- Free: $0/month
+							- Pro: $20/month
+							- Business: $200/month
+							- Enterprise: Contact Sales
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Git Integration
+					
+							Connect your GitHub, GitLab, or BitBucket account https://zeit.co/docs/v2/git-integration
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Getting Started
+
+							1. Build frontend with static site generator
+							2. Build backend API with Node.js, Go, Python, etc
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Frontend
+
+							Specify a `build` script to invoke your static site generator (or write plain HTML/CSS).
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Backend
+
+							Create an `/api` directory with your serverless functions.
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## Demo
+
+							- Create a project
+							- Add html files
+							- Add functions to `/api` dir
+							- Install Now CLI
+							- Develop locally
+							- Deploy
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Create a project
+							```bash
+							mkdir 'my-project'
+							cd 'my-project'
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## index.html
+							```html
+							<h1>Welcome</h1>
+							<p>Below are examples of Serverless Function APIs</p>
+							<ul>
+								<li><a href="/api/echo?hello=now">Say hello</a></li>
+								<li><a href="/api/sqrt?value=64">Show sqrt(64)</a></li>
+							</ul>
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Echo API
+							```js
+							// api/echo.js
+							module.exports = (req, res) => {
+								res.json(req.query);
+							}
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Square Root API
+							```js
+							// api/sqrt.js
+							module.exports = (req, res) => {
+								const { value } = req.query;
+								const answer = Math.sqrt(value);
+								res.json({ value, answer });
+							}
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Install Now CLI globally
+							```bash
+							npm i -g now
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Develop locally
+							```bash
+							now dev
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Deploy
+							```bash
+							now
+							```
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							## Production domain
+							```bash
+							now --prod 
+							```
+						</textarea>
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="vendor/js/reveal.js"></script>
+		<script src="vendor/plugin/markdown/marked.js"></script>
+		<script src="vendor/plugin/markdown/markdown.js"></script>
+		<script src="vendor/plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				controls: true,
+				controlsLayout: 'edges',
+				navigationMode: 'linear',
+				hideCursorTime: 1000,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			});
+		</script>
+	</body>
+</html>
