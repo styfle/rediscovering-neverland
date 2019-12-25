@@ -45,6 +45,10 @@
 			.reveal code {
 				color: deeppink;
 			}
+
+			.slides img {
+				max-height: 40vh;
+			}
 		</style>
 	</head>
 	<body>
@@ -55,6 +59,10 @@
 						## Rediscovering Neverland
 				
 						How to instantly deploy your code 🚀
+
+						![pan](assets/peter-pan-flying.jpg)
+
+						<small>by Steven (<a href="https://twitter.com/styfle">@styfle</a>)</small>
 					</textarea>
 				</section>
 				<section>
@@ -117,40 +125,56 @@
 						<textarea data-template>
 							## DNS
 					
-							Buy a domain at https://zeit.co/domains
+							Buy a domain or bring your own custom domain
+							
+							https://zeit.co/domains
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							## SSL/TLS
 					
-							Every deployment is served over `https` with TLS 1.3 https://zeit.co/blog/automatic-ssl-with-now-lets-encrypt
+							Every deployment is served over HTTP/2 with TLS 1.3
+							
+							https://zeit.co/blog/automatic-ssl-with-now-lets-encrypt
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							## Smart CDN
 					
-							Static files are automatically served from the edge https://zeit.co/smart-cdn
+							Static files are automatically served from the edge in 30+ regions worldwide
+							
+							https://zeit.co/smart-cdn
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							## Start for free
 					
-							No credit card required to create an account http://zeit.co/pricing
+							No credit card required to create an account
 
-							- Free: $0/month
-							- Pro: $20/month
-							- Business: $200/month
-							- Enterprise: Contact Sales
+							- $0 per month
+							- 100 deployments per day
+							- 20 GB bandwidth per month
+							- 10 second function execution
+							- 3 team members
+							- 1 concurrent build
+
+							http://zeit.co/pricing
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							## Git Integration
 					
-							Connect your GitHub, GitLab, or BitBucket account https://zeit.co/docs/v2/git-integration
+							Connect your GitHub, GitLab, or BitBucket account
+
+							Unique URL for every Pull Request
+
+							Merge PR to promote to production
+							
+							https://zeit.co/docs/v2/git-integration
 						</textarea>
 					</section>
 				</section>
@@ -167,14 +191,14 @@
 						<textarea data-template>
 							## Frontend
 
-							Specify a `build` script to invoke your static site generator (or write plain HTML/CSS).
+							Specify a `build` script to invoke your static site generator (or write plain HTML/CSS)
 						</textarea>
 					</section>
 					<section data-markdown>
 						<textarea data-template>
 							## Backend
 
-							Create an `/api` directory with your serverless functions.
+							Create an `/api` directory with your serverless functions
 						</textarea>
 					</section>
 				</section>
@@ -239,7 +263,7 @@
 					</section>
 					<section data-markdown>
 						<textarea data-template>
-							## Install Now CLI globally
+							## Install Now CLI
 							```bash
 							npm i -g now
 							```
