@@ -49,6 +49,14 @@
 			.slides img {
 				max-height: 40vh;
 			}
+
+			.reveal .progress {
+				color: deeppink;
+			}
+
+			.reveal .controls-arrow {
+				color: deeppink;
+			}
 		</style>
 	</head>
 	<body>
@@ -64,6 +72,52 @@
 
 						<small>by Steven (<a href="https://twitter.com/styfle">@styfle</a>)</small>
 					</textarea>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							Problems with deployments...🤔
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Slow builds
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Too much configuration
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Cache invalidation is hard
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Domains, sub-domains, SSL certs
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Unreproducable build/deploy
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							- Possible downtime
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							Great, it works!
+							
+							Can you setup a test environment?
+
+							![yell](assets/pan-growl.jpg)
+						</textarea>
+					</section>
 				</section>
 				<section>
 					<section data-markdown>
@@ -118,6 +172,7 @@
 							- 🔒 No need to setup SSL
 							- 🌩️ No need to setup a CDN
 							- 🤑 No need for a credit card
+							- ⛄ Immutable deployments
 							- 🚀 `git push` to deploy 
 						</textarea>
 					</section>
